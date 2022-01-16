@@ -1,0 +1,9 @@
+{
+  "name": "data-collection",
+  "version": "0.0.1",
+  "description": "Term project for the module of data collection at University Tuebingen.",
+  "main": "index.js",
+  "author": "Yixuan Wu",
+  "license": "MIT",
+  "private": true
+}
