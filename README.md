@@ -1,7 +1,12 @@
 # data-collection
 
 ## Getting started
-ToDo Describe how to use it...
+
+1. Install postgresql
+1. Install node js 17.3.1
+1. Run yarn install
+1. run yarn dev
+1. Go to http localhost 3000
 
 ## Creation process
 1. Set up a server in Oracle Cloud
