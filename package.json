@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Yixuan Wu",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
