@@ -1,404 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Questionnaire</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Questionnaire</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
   <div class="form-center">
-      <form id="backgroundQuestions" method="post" action="." >
-        <div class="content">
-          <h1>Basic Information</h1>
-        </div>  
-        
-        <div class="content">
-          <label for="firstName">First name: </label>
-          <input name="firstName" id="firstName" type="text" minlength="2"/>
-        
-          <br />
-          <br />
-        
-          <label for="lastName">Last name: </label>
-          <input name="lastName" id="lastName" type="text" minlength="2"/>
-        
-          <br />
-          <br />
-        
-          <label for="email">Email: </label>
-          <input name="email" id="email" type="email"  multiple />
-        
-          <br />
-          <br />
-        
-          <label for="age">Your age: </label>
-          <input name="age" id="age" type="number" min="10" max="100" step="1"  />
-        
-          <br />
-          <br />      
-        
-          <label for="areas">
-            您大部分时间所在区域：
-          </label>
-          <select name="area" id="area">
-            <option value="Northeast-China">东北 Northeast China</option>
-            <option value="East-China" selected>华东 In East China</option>
-            <option value="North-China">华北 In North China</option>
-            <option value="Central-China">华中 In central China</option>
-            <option value="South-China">华南 In South China</option>
-            <option value="Southeast-China">西北 In Southeast </option>
-        
-          </select>
-        
-          <br />
-          <br />
-        
-          <label for="educationbg">
-            您的受教育程度 
-            Your educational background
-          </label>
-          <select name="education" id="education">
-            
-            <option value="小学 Primary school">小学 Primary school</option>
-            <option value="中学 Middle school">中学 Middle school</option>
-            <option value="高中 High school">高中 High school</option>
-            <option value="本科 Undergraduate" selected>本科 Undergraduate</option>
-            <option value="硕士 Postgraduate">硕士 Postgraduate</option>
-            <option value="博士 Doctor">博士 Doctor</option>
-            <option value="博士后 Post-Doctor">博士后 Post-Doctor</option>
-        
-          </select>
+    <form id="backgroundQuestions" method="post" action="process">
+      <div class="content">
+        <h1>Basic Information</h1>
+      </div>
 
-        </div>
-        
+      <div class="content">
+        <label for="firstName">First name: </label>
+        <input name="firstName" id="firstName" type="text" minlength="2" />
+
+        <br />
         <br />
 
-        <div class="content">
-          <h1>Experiment questions start here:</h1>
-        </div>
+        <label for="lastName">Last name: </label>
+        <input name="lastName" id="lastName" type="text" minlength="2" />
 
-        <div class="content">
-          <fieldset>
-            <legend>
-              <p>1. 李明把他自己绑了起来。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+        <br />
+        <br />
 
-            <br />
-            <br />
+        <label for="email">Email: </label>
+        <input name="email" id="email" type="email" multiple />
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="LM">Liming</option>
-                <option value="unknown">A man not mentioned in the sentence</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
+        <br />
+        <br />
 
-          <fieldset>
-            <legend>
-              <p>2. 爸爸抱怨小明从来不懂克制他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+        <label for="age">Your age: </label>
+        <input name="age" id="age" type="number" min="10" max="100" step="1" />
 
-            <br />
-            <br />
+        <br />
+        <br />
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="Father">Father</option>
-                <option value="XM">Xiaoming</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-          </fieldset>
+        <label for="areas">
+          您大部分时间所在区域：
+        </label>
+        <select name="area" id="area">
+          <option value="Northeast-China">东北 Northeast China</option>
+          <option value="East-China" selected>华东 In East China</option>
+          <option value="North-China">华北 In North China</option>
+          <option value="Central-China">华中 In central China</option>
+          <option value="South-China">华南 In South China</option>
+          <option value="Southeast-China">西北 In Southeast </option>
 
-          <fieldset>
-            <legend>
-              <p>3. 小红发现丽丽那天晚上悄悄跟踪她自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+        </select>
 
-            <br />
-            <br />
+        <br />
+        <br />
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="XH">Xiaohong</option>
-                <option value="Lili">Lili</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
+        <label for="educationbg">
+          您的受教育程度
+          Your educational background
+        </label>
+        <select name="education" id="education">
 
-          <fieldset>
-            <legend>
-              <p>4. 小红发现玛丽那天欺骗了她自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+          <option value="小学 Primary school">小学 Primary school</option>
+          <option value="中学 Middle school">中学 Middle school</option>
+          <option value="高中 High school">高中 High school</option>
+          <option value="本科 Undergraduate" selected>本科 Undergraduate</option>
+          <option value="硕士 Postgraduate">硕士 Postgraduate</option>
+          <option value="博士 Doctor">博士 Doctor</option>
+          <option value="博士后 Post-Doctor">博士后 Post-Doctor</option>
 
-            <br />
-            <br />
+        </select>
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="XH">Xiaohong</option>
-                <option value="Mary">Mary</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
+      </div>
 
-          <fieldset>
-            <legend>
-              <p>5. 张三认为李四总在别人面前批评他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+      <br />
 
-            <br />
-            <br />
+      <div class="content">
+        <h1>Experiment questions start here:</h1>
+      </div>
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="ZS">Zhangsan</option>
-                <option value="Lisi">Lisi</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-          
-          <fieldset>
-            <legend>
-              <p>6. 玛丽发现小红一直在鼓励她自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
+      <div class="content">
+        <fieldset>
+          <legend>
+            <p>1. 李明把他自己绑了起来。</p>
+          </legend>
 
-            <br />
-            <br />
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
 
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="Mary">Mary</option>
-                <option value="Xiaohong">Xiaohong</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-
-          <fieldset>
-            <legend>
-              <p>7. 国王发现宰相背叛了他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
-
-            <br />
-            <br />
-
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="King">King</option>
-                <option value="Chancellor">Chancellor</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-
-          <fieldset>
-            <legend>
-              <p>8.爸爸发现儿子一直很崇拜他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
-
-            <br />
-            <br />
-
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="Father">Father</option>
-                <option value="Son">Son</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-
-          <fieldset>
-            <legend>
-              <p>9.老板知道员工未来一定会慢慢原谅他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
-
-            <br />
-            <br />
-
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="Boss">Boss</option>
-                <option value="Employer"> emploee</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-
-          <fieldset>
-            <legend>
-              <p>10. 张三抱怨李四总是敷衍他自己。</p>
-            </legend>
-        
-            <label for="acceptances">
-              Please rate your own acceptance of the sentence (the larger the number,
-              the higher the acceptance)   
-            </label>
-                
-            <select name="acceptance" id="acceptance">
-              <option value="-1">   -1   </option>
-              <option value="0">   0   </option>
-              <option value="1">   1   </option>
-            </select>
-
-            <br />
-            <br />
-
-            <label for="references">
-                In this sentence, ‘taziji’ refers to whom?   
-            </label>
-              
-            <select name="reference" id="reference">
-                <option value="Zhangsan">Zhangsan</option>
-                <option value="Lisi"> Lisi</option>
-                <option value="both">Both the above options are possible</option>
-            </select>
-        
-          </fieldset>
-        </div>
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
 
           <br />
-          <a href="success.html">
-            <input type="submit" value="Submit" />
-          </a>
-          
-          <input type="reset" value="Reset" />
-          <button>Another <strong>button</strong></button>
-        
-        </form>
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="LM">Liming</option>
+            <option value="unknown">A man not mentioned in the sentence</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>2. 爸爸抱怨小明从来不懂克制他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="Father">Father</option>
+            <option value="XM">Xiaoming</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>3. 小红发现丽丽那天晚上悄悄跟踪她自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="XH">Xiaohong</option>
+            <option value="Lili">Lili</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>4. 小红发现玛丽那天欺骗了她自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="XH">Xiaohong</option>
+            <option value="Mary">Mary</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>5. 张三认为李四总在别人面前批评他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="ZS">Zhangsan</option>
+            <option value="Lisi">Lisi</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>6. 玛丽发现小红一直在鼓励她自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="Mary">Mary</option>
+            <option value="Xiaohong">Xiaohong</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>7. 国王发现宰相背叛了他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="King">King</option>
+            <option value="Chancellor">Chancellor</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>8.爸爸发现儿子一直很崇拜他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="Father">Father</option>
+            <option value="Son">Son</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>9.老板知道员工未来一定会慢慢原谅他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="Boss">Boss</option>
+            <option value="Employer"> emploee</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>10. 张三抱怨李四总是敷衍他自己。</p>
+          </legend>
+
+          <label for="acceptances">
+            Please rate your own acceptance of the sentence (the larger the number,
+            the higher the acceptance)
+          </label>
+
+          <select name="acceptance" id="acceptance">
+            <option value="-1"> -1 </option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="references">
+            In this sentence, ‘taziji’ refers to whom?
+          </label>
+
+          <select name="reference" id="reference">
+            <option value="Zhangsan">Zhangsan</option>
+            <option value="Lisi"> Lisi</option>
+            <option value="both">Both the above options are possible</option>
+          </select>
+
+        </fieldset>
       </div>
+
+      <br />
+      <input type="submit" value="Submit" />
+
+      <input type="reset" value="Reset" />
+
+    </form>
+  </div>
 </body>
+
 </html>

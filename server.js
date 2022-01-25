@@ -7,7 +7,7 @@ app.use(express.static('public'));
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
-app.post('/process', function(req, res) {
+app.post('/process', function (req, res) {
     console.log(req.body);
 });
 
