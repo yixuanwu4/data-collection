@@ -37,7 +37,9 @@
    1. Create new database for this project `CREATE DATABASE datacollection;`
    1. Create a new user `CREATE USER yixuan WITH ENCRYPTED PASSWORD 'kittysMakeMeHappy';`
    1. Grant permissions to user for new database `GRANT ALL PRIVILEGES ON DATABASE datacollection TO yixuan;`
-1. Start server in production mode `yarn prod &`
+   1. Create a new table with the header names (see the command in file tables.sql)
+   1. Insert a row into the created table (see the command in file tables.sql) 
+1. Start server in production mode `yarn prod &` (prod is defined in package.json)
 
 ## Resources
  - https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-ubuntu/01oci-ubuntu-apache-summary.htm
