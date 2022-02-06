@@ -3,17 +3,20 @@
 ## Getting started
 
 1. Install `node.js` with version 17.3.1
+1. Install postgresql
+1. Set up a postgresql user
 1. Run `yarn install`
 1. Run `yarn add --dev nodemon`
 1. Run `yarn dev`
-1. Go to `http://localhost:3300`
-1. Install postgresql
-1. Set up a postgresql user
+1. Go to `http://localhost:3000`
+1. Data can be exported to csv by visiting `http://localhost:3000/export`
 
 ## Creation process
-1. Set up a server in Oracle Cloud
+1. Set up a free ARM server on Oracle Cloud
+   1. Open ingress port `80`
 1. Connected to the subdomain homework.yxwu.me to the server by adding DNS A and AAAA records
-1. Set up nodejs on the server
+1. Open ingress port `80` on the server with `iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT`
+1. Set up nodejs on the server with `apt install node`
 1. Initialized a new JavaScript project with `yarn init .` inside my project folder
 1. Created a git repository on Github
 1. Associated my local project with the git repository
@@ -34,3 +37,7 @@
    1. Create new database for this project `CREATE DATABASE datacollection;`
    1. Create a new user `CREATE USER yixuan WITH ENCRYPTED PASSWORD 'kittysMakeMeHappy';`
    1. Grant permissions to user for new database `GRANT ALL PRIVILEGES ON DATABASE datacollection TO yixuan;`
+1. Start server in production mode `yarn prod &`
+
+## Resources
+ - https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-ubuntu/01oci-ubuntu-apache-summary.htm

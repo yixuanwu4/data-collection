@@ -12,7 +12,8 @@ const pool = new pg.Pool({
 
 // setup express server
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+const listen = process.env.HOST || '127.0.0.1';
 
 app.use(express.static('public'));
 app.use(express.json());       // to support JSON-encoded bodies
@@ -41,8 +42,8 @@ app.get('/export', function (req, res) {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(port, listen, () => {
+  console.log(`Yixuans homework is listening at http://${listen}:${port}`)
 })
 
 export default app;

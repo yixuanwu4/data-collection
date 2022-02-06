@@ -8,7 +8,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch public,src server.js"
+    "dev": "nodemon --watch public,src server.js",
+    "prod": "PORT=80 HOST=0.0.0.0 node server.js"
   },
   "dependencies": {
     "express": "^4.17.2",
