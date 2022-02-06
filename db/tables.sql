@@ -1,6 +1,6 @@
-\c datacollection
+\c datacollection --connect to the "datacollection" database
 
-DROP TABLE referencepreference;
+-- DROP TABLE referencepreference; (only use it when the table should be discarded)
 
 CREATE TABLE referencepreference (
     id SERIAL PRIMARY KEY,
@@ -31,9 +31,8 @@ CREATE TABLE referencepreference (
     acceptance10 VARCHAR(3),
     reference10 VARCHAR(100)
 );
+
 GRANT ALL ON referencepreference TO yixuan;
 GRANT ALL ON referencepreference_id_seq TO yixuan;
-
-
 
 INSERT INTO referencepreference(firstName, lastName, email, age, education, acceptance1, reference1, acceptance2, reference2, acceptance3, reference3, acceptance4, reference4, acceptance5, reference5, acceptance6, reference6, acceptance7, reference7, acceptance8, reference8, acceptance9, reference9, acceptance10, reference10) VALUES ('Yixuan', 'Wu', 'yixuan@wu.ch', '25', 'Master', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26');
