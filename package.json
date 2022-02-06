@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "express": "^4.17.2",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "pg-copy-streams": "^6.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
