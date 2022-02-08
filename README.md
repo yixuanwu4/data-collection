@@ -40,6 +40,7 @@
    1. Create a new table with the header names (see the command in file tables.sql)
    1. Insert a row into the created table (see the command in file tables.sql) 
 1. Start server in production mode `yarn prod &` (prod is defined in package.json)
+1. From pg-copy-streams import copyTo to copy the data out of PostgreSQL and save it into export.csv. 
 
 ## Resources
  - https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-ubuntu/01oci-ubuntu-apache-summary.htm
