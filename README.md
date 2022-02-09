@@ -6,7 +6,6 @@
 1. Install postgresql
 1. Set up a postgresql user
 1. Run `yarn install`
-1. Run `yarn add --dev nodemon`
 1. Run `yarn dev`
 1. Go to `http://localhost:3000`
 1. Data can be exported to csv by visiting `http://localhost:3000/export`
@@ -39,6 +38,7 @@
    1. Grant permissions to user for new database `GRANT ALL PRIVILEGES ON DATABASE datacollection TO yixuan;`
    1. Create a new table with the header names (see the command in file tables.sql)
    1. Insert a row into the created table (see the command in file tables.sql) 
+1. Implemented backend in server.js.
 1. Start server in production mode `yarn prod &` (prod is defined in package.json)
 1. From pg-copy-streams import copyTo to copy the data out of PostgreSQL and save it into export.csv. 
 
